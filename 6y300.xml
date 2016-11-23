@@ -292,8 +292,8 @@
 </table>
 
 <table name="Throttle Open" storageaddress="0x85dc">
-      <table type="X Axis" storageaddress="0x853e" />
-      <table type="Y Axis" storageaddress="0x1e0" />
+      <table type="X Axis" storageaddress="0x8820" />
+      <table type="Y Axis" storageaddress="0x88b0" />
     </table>
 
   </rom>
