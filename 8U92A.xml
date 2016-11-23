@@ -203,9 +203,9 @@
     <table type="3D" name="Throttle Open" category="Electronic Throttle" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
       <scaling units="AFR(Gasoline Scale)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x" to_byte="x" format="0.00" fineincrement=".1" coarseincrement="1" />
+        <scaling units="Load" expression="x" to_byte="x" format="0" fineincrement=".1" coarseincrement="1" />
       </table>
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
+      <table type="Y Axis" name="RPM" storagetype="uint16" endian="big" logparam="?">
         <scaling units="RPM" expression="x" to_byte="x" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>This table controls the driving of the electronic throttle. Its exact operation mode is unknown. DO NOT edit this unless you know what you are doing. This can cause the car to go into limp mode with very small changes( less than 1%.)</description>
