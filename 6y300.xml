@@ -49,7 +49,7 @@
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
         <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
-      <description>This timing map isused by the ecu when it detects excesive amounts of knock. This table should ALWAYS be lower than the main low detonation table.</description>
+      <description>This timing map isused by the ecu when it detects excesive amounts of knock, or it detects that the knock sensor is not working or is not present. This table should ALWAYS be lower than the main low detonation table.</description>
     </table>
 
 <table type="3D" name="Intake Cam Timing" category="Variable Cam Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
@@ -172,7 +172,7 @@
     <data>4.84</data>
     <data>4.92</data>
    </table>
-   <description>These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
+   <description>This table represents airflow through the maf sensor at a given voltage. The ecu uses this to calculate many things including timing and fueling. It is used to fine tune air fuel ratios in many cases, as the ecu thinks more or less air is flowing through the maf sensor at a given voltage it adds or removes a proportionate amount of fuel.</description>
   </table>
 
 <table type="2D" name="Fuel Injection Multiplier" category="Fuel" storagetype="uint16" endian="big" sizey="1" userlevel="1">
@@ -180,7 +180,7 @@
    <table type="Static Y Axis" name="K Value" sizey="2">
     <data>K Value</data>
    </table>
-   <description>Global Fuel injection Multiplier</description>
+   <description>Global Fuel injection Multiplier. This can be used to compensate for larger or smaller injectors, or a larger or smaller maf housing. This can also be used for alternate fuels such as e85.</description>
   </table>
 
 <table type="2D" name="Idle Target" category="Misc" storagetype="uint8" endian="big" sizey="16" userlevel="1">
@@ -204,7 +204,7 @@
     <data>230</data>
    
    </table>
-   <description>This is the target idle table which references Coolant Temperature</description>
+   <description>This is the target idle table which references Coolant Temperature.</description>
   </table>
 
 <table type="2D" name="Idle Target 2" category="Misc" storagetype="uint8" endian="big" sizey="16" userlevel="1">
@@ -241,7 +241,7 @@
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
         <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
-      <description>Air fuel ratio that is targeted by the ECU. If this value doesn't match when logging other paramaters need to be adjusted, like fuel compensation, and/or maf scaling.</description>
+      <description>This table controls the driving of the electronic throttle. Its exact operation mode is unknown. DO NOT edit this unless you know what you are doing. This can cause the car to go into limp mode with very small changes( less than 1%.)</description>
 </table>
 
 
