@@ -284,16 +284,16 @@
 </table>
 <table name="Maf" storageaddress="0x7992">
 </table>
-<table name="Idle Target" storageaddress="0x73b7">
+<table name="Idle Target" storageaddress="">
 </table>
-<table name="Idle Target 2" storageaddress="0x73db">
+<table name="Idle Target 2" storageaddress="">
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x500c">
 </table>
 
-<table name="Throttle Open" storageaddress="0x85dc">
-      <table type="X Axis" storageaddress="0x8820" />
-      <table type="Y Axis" storageaddress="0x88b0" />
+<table name="Throttle Open" storageaddress="">
+      <table type="X Axis" storageaddress="" />
+      <table type="Y Axis" storageaddress="" />
     </table>
 
   </rom>
