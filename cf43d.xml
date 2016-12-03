@@ -17,52 +17,52 @@
       <filesize>1024kb</filesize>
     </romid>
     <table type="3D" name="Timing1" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="x" to_byte="x" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
         <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0.00" fineincrement="50" coarseincrement="100" />
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
     </table>
 <table type="3D" name="Timing Main Low Detonation" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="x" to_byte="x" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
         <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0.00" fineincrement="50" coarseincrement="100" />
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
     </table>
 <table type="3D" name="Timing High Detonation" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="x" to_byte="x" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
         <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0.00" fineincrement="50" coarseincrement="100" />
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
     </table>
 <table type="3D" name="Intake Cam Timing" category="Variable Cam Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <scaling units="NA" expression="(x-128)*.5" to_byte="(x*2)+128" format="0" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
         <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0.00" fineincrement="50" coarseincrement="100" />
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
     </table>
 <table type="3D" name="Exhaust Cam Timing" category="Variable Cam Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <scaling units="NA" expression="(x-128)*.5" to_byte="(x*2)+128" format="0" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
         <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0.00" fineincrement="50" coarseincrement="100" />
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
     </table>
@@ -73,7 +73,7 @@
         <scaling units="Load" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0.00" fineincrement="50" coarseincrement="100" />
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
     </table>
@@ -84,7 +84,7 @@
         <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".1" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0.00" fineincrement="50" coarseincrement="100" />
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
     </table>
