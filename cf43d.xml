@@ -68,9 +68,9 @@
     </table>
 
 <table type="3D" name="Fuel Compensation" category="Fuel" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="x*.7813" to_byte="x/.7813" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <scaling units="NA" expression="(x/128)*100" to_byte="(x/100)*128" format="0.00" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="Load" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0" fineincrement=".2" coarseincrement="1" />
+        <scaling units="Load" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
       </table>
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
         <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
