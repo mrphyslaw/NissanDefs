@@ -72,7 +72,7 @@
         <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>Ignition Timing Map Template</description>
-    </table>>
+    </table>
 
 <table type="3D" name="Fuel Target" category="Fuel" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="?">
       <scaling units="AFR(Gasoline Scale)" expression="14.7/(x*.0078125)" to_byte="(14.7/x)/.0078125" format="0.00" fineincrement=".2" coarseincrement="1" />
