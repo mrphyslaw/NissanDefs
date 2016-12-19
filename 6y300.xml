@@ -85,7 +85,7 @@
       <description>Air fuel ratio that is targeted by the ECU. If this value doesn't match when logging other paramaters need to be adjusted, like fuel compensation, and/or maf scaling.</description>
 </table>
 
-<table type="2D" name="Rev Limit (Fuel Cut)" category="Rev Limit" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+<table type="2D" name="Rev Limit (Fuel Cut)" category="Limiters" storagetype="uint16" endian="big" sizey="2" userlevel="1">
    <scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
    <table type="Static Y Axis" name="Rev Limit Fuel Cut" sizey="2">
     <data>Fuel Cut</data>
@@ -94,7 +94,7 @@
    <description>These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
   </table>
 
-<table type="2D" name="No Load Rev Limit (Fuel Cut)" category="Rev Limit" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+<table type="2D" name="No Load Rev Limit (Fuel Cut)" category="Limiters" storagetype="uint16" endian="big" sizey="2" userlevel="1">
    <scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
    <table type="Static Y Axis" name="Rev Limit Fuel Cut(No Load)" sizey="2">
     <data>Fuel Cut</data>
