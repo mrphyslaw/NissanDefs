@@ -245,7 +245,13 @@
 </table>
 
 
-
+<table type="2D" name="Speed Limiter" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+   <scaling units="" expression="x*.621371" to_byte="x/.621371" format="0.00" fineincrement="1" coarseincrement="10" />
+   <table type="Static Y Axis" name="MPH" sizey="2">
+    <data>K Value</data>
+   </table>
+   <description>Speed Limiter</description>
+  </table>
 
 
    <table name="Timing1" storageaddress="0x52a1">
@@ -289,6 +295,8 @@
 <table name="Idle Target 2" storageaddress="0x73db">
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x4FD0">
+</table>
+<table name="Speed Limiter" storageaddress="0x5014">
 </table>
 
 <table name="Throttle Open" storageaddress="0x85dc">
