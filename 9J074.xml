@@ -105,7 +105,7 @@
 
 
 <table type="2D" name="Maf" category="Airflow" storagetype="uint16" endian="big" sizey="64" userlevel="1">
-   <scaling units="Airflow" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="100" />
+   <scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100" />
    <table type="Static Y Axis" name="Maf Sensor (volts)" format="0.00" sizey="64">
    <data>0.0</data>
     <data>0.08</data>
@@ -231,15 +231,21 @@
    <description>This is the target idle table which references Coolant Temperature</description>
   </table>
 
-
+<table type="2D" name="Speed Limiter" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+   <scaling units="Miles Per Hour" expression="x*.0621371" to_byte="x/.0621371" format="0.00" fineincrement="1" coarseincrement="10" />
+   <table type="Static Y Axis" name="Speed Limiter" sizey="2">
+    <data></data>
+   </table>
+   <description>MPH at which the ecu will close the throttle to limit the speed of the vehicle.</description>
+  </table>
 
 <table type="3D" name="Throttle Open" category="Electronic Throttle" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="AFR(Gasoline Scale)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
-      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x" to_byte="x" format="0.00" fineincrement=".1" coarseincrement="1" />
+      <scaling units="Unknown" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" />
+      <table type="X Axis" name="Pedal Pos?" storagetype="uint16" endian="big" logparam="?">
+        <scaling units="Load" expression="x/65535" to_byte="(x*65535" format="0.00%" fineincrement=".1" coarseincrement="1" />
       </table>
-      <table type="Y Axis" name="RPM" storagetype="uint16" endian="big" logparam="?">
-        <scaling units="RPM" expression="x" to_byte="x" format="0" fineincrement="50" coarseincrement="100" />
+      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
       <description>This table controls the driving of the electronic throttle. Its exact operation mode is unknown. DO NOT edit this unless you know what you are doing. This can cause the car to go into limp mode with very small changes( less than 1%.)</description>
 </table>
@@ -290,7 +296,8 @@
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x4FD0">
 </table>
-
+<table name="Speed Limiter" storageaddress="0x5074">
+</table>
 <table name="Throttle Open" storageaddress="0x85dc">
       <table type="X Axis" storageaddress="0x8820" />
       <table type="Y Axis" storageaddress="0x88b0" />
