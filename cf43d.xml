@@ -165,7 +165,7 @@
     <data>Fuel Cut</data>
     <data>Fuel Restore</data>
    </table>
-   <description>These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
+   <description>This table represents airflow through the maf sensor at a given voltage. The ecu uses this to calculate many things including timing and fueling. It is used to fine tune air fuel ratios in many cases, as the ecu thinks more or less air is flowing through the maf sensor at a given voltage it adds or removes a proportionate amount of fuel.</description>
   </table>
 
 <table type="2D" name="No Load Rev Limit (Fuel Cut)" category="Rev Limit" storagetype="uint16" endian="big" sizey="2" userlevel="1">
