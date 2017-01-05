@@ -24,7 +24,7 @@
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
         <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
-      <description>Ignition Timing Map Template</description>
+      <description>Ignition Timing Map. This is thought to be tied to coolant temp and only run when the coolant temp is under a certain set point. This needs to be kept close to the "Timing Main Low Detonation" map.</description>
     </table>
 <table type="3D" name="Timing Main Low Detonation" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
       <scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
@@ -44,7 +44,7 @@
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
         <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
-      <description>This timing map is used by the ecu when it detects excesive amounts of knock. This table should ALWAYS be lower than the main low detonation table.</description>
+      <description>This timing map is used by the ecu when it detects excesive amounts of knock, or it detects that the knock sensor is not working or is not present. This table should ALWAYS be lower than the main low detonation table.</description>
     </table>
 <table type="3D" name="Intake Cam Timing" category="Variable Cam Timing" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="?">
       <scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.00" fineincrement=".2" coarseincrement="1" />
@@ -65,7 +65,7 @@
       <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
         <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
       </table>
-      <description>Ignition Timing Map Template</description>
+      <description>This is an enrichment table for the ECU. Values above 100 are adding fuel, and values below 100 remove fuel.</description>
     </table>
 
 <table type="3D" name="Fuel Target" category="Fuel" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="?">
