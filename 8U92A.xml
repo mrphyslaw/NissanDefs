@@ -62,6 +62,16 @@
 <table name="Throttle Open" storageaddress="0x9888">
       <table type="X Axis" storageaddress="0x9acc" />
       <table type="Y Axis" storageaddress="0x9b5c" />
-    </table>
+</table>
+
+<table name="Throttle ? A" storageaddress="0x71dc">
+	<table type="X Axis" storageaddress="0x8ac2" />
+	<table type="Y Axis" storageaddress="0x8ae2" />
+</table>
+
+<table name="Throttle ? B" storageaddress="0x73dc">
+	<table type="X Axis" storageaddress="0x8ac2" />
+	<table type="Y Axis" storageaddress="0x8ae2" />
+</table>
 
 </rom>
