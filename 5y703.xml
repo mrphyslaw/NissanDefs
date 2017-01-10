@@ -49,7 +49,7 @@
 </table>
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x5066">
 </table>
-<table name="Maf" storageaddress="0x7992">
+<table name="MAF" storageaddress="0x7992">
 </table>
 
 <table name="Fuel Injection Multiplier" storageaddress="0x500c">

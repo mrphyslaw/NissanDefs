@@ -159,7 +159,7 @@
       <table type="X Axis" storageaddress="0xDDA8" />
       <table type="Y Axis" storageaddress="0xDE38" />
     </table>
-<table name="Maf" storageaddress="0x0c83e">
+<table name="MAF" storageaddress="0x0c83e">
 </table>
 <table name="Rev Limit (Fuel Cut)" storageaddress="0x8998">
 </table>

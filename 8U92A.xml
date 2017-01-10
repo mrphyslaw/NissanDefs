@@ -51,7 +51,7 @@
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x636E">
 </table>
 
-<table name="Maf" storageaddress="0x8b36">
+<table name="MAF" storageaddress="0x8b36">
 </table>
 
 <table name="Idle Target" storageaddress="0x854c">

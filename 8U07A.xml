@@ -51,7 +51,7 @@
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x53b2">
 </table>
 
-<table name="Maf" storageaddress="0x84da">
+<table name="MAF" storageaddress="0x84da">
 <scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100" />
 </table>
 

@@ -109,9 +109,10 @@
   </table>
 
 
-<table type="2D" name="Maf" category="Airflow" storagetype="uint16" endian="big" sizey="64" userlevel="1">
-   <scaling units="Airflow" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="100" />
-   <table type="Static Y Axis" name="Maf Sensor (volts)" format="0.00" sizey="64">
+<table type="2D" name="MAF" category="Airflow" storagetype="uint16" endian="big" sizey="64" userlevel="1">
+   <scaling name="unscaled" units="N/A" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100" />
+
+   <table type="Static Y Axis" name="MAF Sensor (volts)" format="0.00" sizey="64">
    <data>0.0</data>
     <data>0.08</data>
     <data>.16</data>
