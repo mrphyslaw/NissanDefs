@@ -1,6 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<roms>
-  <rom>
+<rom base="NISSAN_01">
     <romid>
       <xmlid>1TKE8Z5N56</xmlid>
       <internalidaddress>6c39</internalidaddress>
@@ -16,242 +14,6 @@
       <flashmethod>nisprog</flashmethod>
       <filesize>512kb</filesize>
     </romid>
-
-    <table type="3D" name="Timing1" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
-      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
-      </table>
-
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
-      </table>
-      <description>Ignition Timing Map. This is thought to be tied to coolant temp and only run when the coolant temp is under a certain set point. This needs to be kept close to the "Timing Main Low Detonation" map.</description>
-    </table>
-
-<table type="3D" name="Timing Main Low Detonation" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
-      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
-      </table>
-
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
-      </table>
-      <description>This is the main timing table that the ECU uses when there is not excessive knock and everything is functioning correctly.</description>
-    </table>
-
-<table type="3D" name="Timing High Detonation" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
-      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
-      </table>
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
-      </table>
-      <description>This timing map is used by the ecu when it detects excesive amounts of knock, or it detects that the knock sensor is not working or is not present. This table should ALWAYS be lower than the main low detonation table.</description>
-    </table>
-
-<table type="3D" name="Intake Cam Timing" category="Variable Cam Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.00" fineincrement=".2" coarseincrement="1" />
-      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
-      </table>
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
-      </table>
-      <description>Advance of the intake camshaft in degrees.</description>
-    </table>
-
-<table type="3D" name="Fuel Compensation" category="Fuel" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="NA" expression="(x/128)*100" to_byte="(x/100)*128" format="0.00" fineincrement=".2" coarseincrement="1" />
-      <table type="X Axis" name="Load" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
-      </table>
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
-      </table>
-      <description>This is an enrichment table for the ECU. Values above 100 are adding fuel, and values below 100 remove fuel.</description>
-    </table>
-
-<table type="3D" name="Fuel Target" category="Fuel" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="?">
-      <scaling units="AFR(Gasoline Scale)" expression="14.7/(x*.0078125)" to_byte="(14.7/x)/.0078125" format="0.00" fineincrement=".2" coarseincrement="1" />
-      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".1" coarseincrement="1" />
-      </table>
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
-      </table>
-      <description>Air fuel ratio that is targeted by the ECU. If this value doesn't match when logging other paramaters need to be adjusted, like fuel compensation, and/or maf scaling.</description>
-</table>
-
-<table type="2D" name="Rev Limit (Fuel Cut)" category="Limiters" storagetype="uint16" endian="big" sizey="2" userlevel="1">
-   <scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
-   <table type="Static Y Axis" name="Rev Limit Fuel Cut" sizey="2">
-    <data>Fuel Cut</data>
-    <data>Fuel Restore</data>
-   </table>
-   <description>These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
-  </table>
-
-<table type="2D" name="No Load Rev Limit (Fuel Cut)" category="Limiters" storagetype="uint16" endian="big" sizey="2" userlevel="1">
-   <scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
-   <table type="Static Y Axis" name="Rev Limit Fuel Cut(No Load)" sizey="2">
-    <data>Fuel Cut</data>
-    <data>Fuel Restore</data>
-   </table>
-   <description>These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
-  </table>
-
-
-<table type="2D" name="Maf" category="Airflow" storagetype="uint16" endian="big" sizey="64" userlevel="1">
-   <scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100" />
-   <table type="Static Y Axis" name="Maf Sensor (volts)" format="0.00" sizey="64">
-   <data>0.0</data>
-    <data>0.08</data>
-    <data>.16</data>
-    <data>.23</data>
-    <data>.31</data>
-    <data>.39</data>
-    <data>.47</data>
-    <data>.55</data>
-    <data>.63</data>
-    <data>.70</data>
-    <data>.78</data>
-    <data>.86</data>
-    <data>.94</data>
-    <data>1.02</data>
-    <data>1.09</data>
-    <data>1.10</data>
-    <data>1.25</data>
-    <data>1.33</data>
-    <data>1.41</data>
-    <data>1.48</data>
-    <data>1.56</data>
-    <data>1.64</data>
-    <data>1.72</data>
-    <data>1.80</data>
-    <data>1.88</data>
-    <data>1.95</data>
-    <data>2.03</data>
-    <data>2.11</data>
-    <data>2.19</data>
-    <data>2.27</data>
-    <data>2.34</data>
-    <data>2.42</data>
-    <data>2.50</data>
-    <data>2.58</data>
-    <data>2.66</data>
-    <data>2.73</data>
-    <data>2.81</data>
-    <data>2.89</data>
-    <data>2.97</data>
-    <data>3.05</data>
-    <data>3.13</data>
-    <data>3.20</data>
-    <data>3.28</data>
-    <data>3.36</data>
-    <data>3.44</data>
-    <data>3.52</data>
-    <data>3.59</data>
-    <data>3.67</data>
-    <data>3.75</data>
-    <data>3.83</data>
-    <data>3.91</data>
-    <data>3.98</data>
-    <data>4.06</data>
-    <data>4.14</data>
-    <data>4.22</data>
-    <data>4.30</data>
-    <data>4.38</data>
-    <data>4.45</data>
-    <data>4.53</data>
-    <data>4.61</data>
-    <data>4.69</data>
-    <data>4.77</data>
-    <data>4.84</data>
-    <data>4.92</data>
-   </table>
-   <description>This table represents airflow through the maf sensor at a given voltage. The ecu uses this to calculate many things including timing and fueling. It is used to fine tune air fuel ratios in many cases, as the ecu thinks more or less air is flowing through the maf sensor at a given voltage it adds or removes a proportionate amount of fuel.</description>
-  </table>
-
-<table type="2D" name="Fuel Injection Multiplier" category="Fuel" storagetype="uint16" endian="big" sizey="1" userlevel="1">
-   <scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="100" />
-   <table type="Static Y Axis" name="K Value" sizey="2">
-    <data>K Value</data>
-   </table>
-   <description>Global Fuel injection Multiplier. This can be used to compensate for larger or smaller injectors, or a larger or smaller maf housing. This can also be used for alternate fuels such as e85.</description>
-  </table>
-
-<table type="2D" name="Idle Target" category="Misc" storagetype="uint8" endian="big" sizey="16" userlevel="1">
-   <scaling units="RPM" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="100" />
-   <table type="Static Y Axis" name="Coolant Temperature(Farenheight)" format="0" sizey="16">
-   <data>-40</data>
-    <data>-22</data>
-    <data>-4</data>
-    <data>14</data>
-    <data>32</data>
-    <data>50</data>
-    <data>68</data>
-    <data>86</data>
-    <data>104</data>
-    <data>122</data>
-    <data>140</data>
-    <data>158</data>
-    <data>176</data>
-    <data>194</data>
-    <data>212</data>
-    <data>230</data>
-   
-   </table>
-   <description>This is the target idle table which references Coolant Temperature.</description>
-  </table>
-
-<table type="2D" name="Idle Target 2" category="Misc" storagetype="uint8" endian="big" sizey="16" userlevel="1">
-   <scaling units="RPM" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="100" />
-   <table type="Static Y Axis" name="Coolant Temperature(Farenheight)" format="0" sizey="16">
-   <data>-40</data>
-    <data>-22</data>
-    <data>-4</data>
-    <data>14</data>
-    <data>32</data>
-    <data>50</data>
-    <data>68</data>
-    <data>86</data>
-    <data>104</data>
-    <data>122</data>
-    <data>140</data>
-    <data>158</data>
-    <data>176</data>
-    <data>194</data>
-    <data>212</data>
-    <data>230</data>
-   
-   </table>
-   <description>This is the target idle table which references Coolant Temperature</description>
-  </table>
-
-
-
-<table type="3D" name="Throttle Open" category="Electronic Throttle" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-      <scaling units="AFR(Gasoline Scale)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
-      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="Load" expression="x" to_byte="x" format="0.00" fineincrement=".1" coarseincrement="1" />
-      </table>
-      <table type="Y Axis" name="RPM" storagetype="uint16" endian="big" logparam="?">
-        <scaling units="RPM" expression="x" to_byte="x" format="0" fineincrement="50" coarseincrement="100" />
-      </table>
-      <description>This table controls the driving of the electronic throttle. Its exact operation mode is unknown. DO NOT edit this unless you know what you are doing. This can cause the car to go into limp mode with very small changes( less than 1%.)</description>
-</table>
-
-
-<table type="2D" name="Speed Limiter" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
-   <scaling units="" expression="x*.0621371" to_byte="x/.0621371" format="0.00" fineincrement="1" coarseincrement="10" />
-   <table type="Static Y Axis" name="MPH" sizey="2">
-    <data>K Value</data>
-   </table>
-   <description>Speed Limiter</description>
-  </table>
 
 
    <table name="Timing1" storageaddress="0x52a1">
@@ -279,7 +41,7 @@
       <table type="Y Axis" storageaddress="0x6deb" />
     </table>
 
-<table name="Intake Cam Timing" storageaddress="0x5ab1">
+<table name="Intake Cam Timing (16x16)" storageaddress="0x5ab1">
       <table type="X Axis" storageaddress="0x775d" />
       <table type="Y Axis" storageaddress="0x776d" />
     </table>
@@ -289,6 +51,7 @@
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x502a">
 </table>
 <table name="Maf" storageaddress="0x796a">
+   <scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100" />
 </table>
 <table name="Idle Target" storageaddress="0x73b7">
 </table>
@@ -304,5 +67,4 @@
       <table type="Y Axis" storageaddress="0x88b0" />
     </table>
 
-  </rom>
-</roms>
+</rom>
