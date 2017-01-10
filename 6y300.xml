@@ -59,8 +59,8 @@
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x4FD0">
 </table>
-<table name="Speed Limiter" storageaddress="0x5074">
-</table>
+<table name="Speed Limiter" storageaddress="0x5074" />
+<table name="Speed Limiter (km/h)" storageaddress="0x5074" />
 
 <table name="Throttle Open" storageaddress="0x85dc">
       <table type="X Axis" storageaddress="0x8820" />
