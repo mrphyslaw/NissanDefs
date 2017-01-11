@@ -1,6 +1,7 @@
 <rom base="NISSAN_01">
     <romid>
-      <xmlid>1TKE8Z5N57</xmlid>
+	<xmlid>9J074</xmlid>
+	<hwid>1TKE8Z5N57</hwid>
       <internalidaddress>6c39</internalidaddress>
       <internalidstring>9J074</internalidstring>
       <ecuid>9J074</ecuid>

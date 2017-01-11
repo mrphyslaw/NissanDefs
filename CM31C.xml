@@ -1,6 +1,7 @@
 <rom base="NISSAN_01">
     <romid>
-      <xmlid>6GI5VN6</xmlid>
+	<xmlid>CM31C</xmlid>
+	<hwid>6GI5VN6</hwid>
       <internalidaddress>2401</internalidaddress>
       <internalidstring>CM31C</internalidstring>
       <ecuid>CM31C</ecuid>
