@@ -238,12 +238,14 @@
   </table>
 
     <table type="3D" name="Throttle Open" category="Electronic Throttle" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+	<!-- here too, the +/- 32768 is just to nicen the display -->
       <scaling units="Unknown" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" />
-      <table type="X Axis" name="Pedal Pos?" storagetype="uint16" endian="big" logparam="?">
-        <scaling units="Load" expression="x/65535" to_byte="(x*65535" format="0.00%" fineincrement=".1" coarseincrement="1" />
+      <table type="X Axis" name="?" storagetype="uint8" endian="big" logparam="?">
+	  <!-- ECU actually scales *16 internally for calculations, but until more is known, just 1:1 here -->
+        <scaling units="N/A" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
       </table>
-      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
-        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
+      <table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+        <scaling units="N/A" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100" />
       </table>
       <description>This table controls the driving of the electronic throttle. Its exact operation mode is unknown. DO NOT edit this unless you know what you are doing. This can cause the car to go into limp mode with very small changes( less than 1%.)</description>
 </table>
