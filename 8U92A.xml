@@ -75,4 +75,6 @@
 	<table type="Y Axis" storageaddress="0x8ae2" />
 </table>
 
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6508" xorloc="0x6500" />
+
 </rom>

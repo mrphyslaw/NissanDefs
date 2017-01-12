@@ -56,6 +56,6 @@
 <table name="Fuel Injection Multiplier" storageaddress="0x500c">
 </table>
 
-
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0x51C0" xorloc="0x51B8" />
 
 </rom>

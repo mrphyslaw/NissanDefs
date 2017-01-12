@@ -170,4 +170,7 @@
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x8904">
 </table>
+
+<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C" />
+
 </rom>
