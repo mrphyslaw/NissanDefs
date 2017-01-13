@@ -1,6 +1,6 @@
 <rom base="NISSAN_01">
     <romid>
-	<xmlid>6Y303</xmlid>
+	<xmlid>6Y300</xmlid>
 	<hwid>1TKE8Z5N56</hwid>
       <internalidaddress>6c61</internalidaddress>
       <internalidstring>6y303</internalidstring>
@@ -66,5 +66,8 @@
 <table name="Throttle Open" storageaddress="0x85fc">
       <table type="X Axis" storageaddress="0x88d0" />
       <table type="Y Axis" storageaddress="0x8840" />
+    </table>
+
+<checksum type="std" start="0" end="0x" sumloc="0x" xorloc="0x" />
 
 </rom>
