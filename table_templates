@@ -35,7 +35,19 @@
       </table>
       <description>This timing map is used by the ecu when it detects excesive amounts of knock, or it detects that the knock sensor is not working or is not present. This table should ALWAYS be lower than the main low detonation table.</description>
     </table>
+
 <table type="3D" name="Intake Cam Timing (8x8)" category="Variable Cam Timing" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="?">
+      <scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
+        <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
+      </table>
+      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
+      </table>
+      <description>Advance of the intake camshaft in degrees.</description>
+    </table>
+	
+	<table type="3D" name="Intake Cam Timing Cold (8x8)" category="Variable Cam Timing" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="?">
       <scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.00" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
         <scaling units="Load" expression="x*0.151875" to_byte="x/0.151875" format="0.00" fineincrement=".2" coarseincrement="1" />
