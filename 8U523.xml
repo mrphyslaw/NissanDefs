@@ -72,13 +72,13 @@
 </table>
 
 <table name="Throttle ? A" storageaddress="0x6428">
-	<table type="X Axis" storageaddress="0x8402" />
-	<table type="Y Axis" storageaddress="0x83e2" />
+	<table type="X Axis" storageaddress="0x83e2" />
+	<table type="Y Axis" storageaddress="0x8402" />
 </table>
 
 <table name="Throttle ? B" storageaddress="0x6628">
-	<table type="X Axis" storageaddress="0x8402" />
-	<table type="Y Axis" storageaddress="0x83e2" />
+	<table type="X Axis" storageaddress="0x83e2" />
+	<table type="Y Axis" storageaddress="0x8402" />
 </table>
 
 <checksum type="std" start="0" end="0x" sumloc="0x" xorloc="0x" />
