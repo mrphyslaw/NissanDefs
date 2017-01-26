@@ -1,0 +1,47 @@
+<rom base="NISSAN_01">
+    <romid>
+	<xmlid>5y006</xmlid>
+	<hwid>1ZVMATONH</hwid>
+      <internalidaddress>23c1</internalidaddress>
+      <internalidstring>5y006</internalidstring>
+      <ecuid>5y006</ecuid>
+      <year>2001</year>
+      <market>USDM</market>
+      <make>Infiniti</make>
+      <model>I30</model>
+      <submodel>Auto</submodel>
+      <transmission>MT</transmission>
+      <memmodel>SH705507</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>512kb</filesize>
+    </romid>
+
+
+
+
+    <table name="Timing Main Low Detonation" storageaddress="0x00EA8">
+      <table type="X Axis" storageaddress="0x26da" />
+      <table type="Y Axis" storageaddress="0x26ea" />
+    </table>
+
+    <table name="Timing High Detonation" storageaddress="0x00FA8">
+      <table type="X Axis" storageaddress="0x26da" />
+      <table type="Y Axis" storageaddress="0x26ea" />
+    </table>
+
+    <table name="Fuel Compensation" storageaddress="0x1378">
+      <table type="X Axis" storageaddress="0x25fc" />
+      <table type="Y Axis" storageaddress="0x25c8" />
+    </table>
+
+    <table name="Fuel Target" storageaddress="0x1608">
+      <table type="X Axis" storageaddress="0x2483" />
+      <table type="Y Axis" storageaddress="0x25c0" />
+    </table>
+
+    
+
+<table name="MAF" storageaddress="0x333e">
+</table>
+
+</rom>
