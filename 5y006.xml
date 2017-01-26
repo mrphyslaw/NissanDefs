@@ -9,8 +9,8 @@
       <market>USDM</market>
       <make>Infiniti</make>
       <model>I30</model>
-      <submodel>Auto</submodel>
-      <transmission>MT</transmission>
+      <submodel>NA</submodel>
+      <transmission>AT</transmission>
       <memmodel>SH705507</memmodel>
       <flashmethod>nisprog</flashmethod>
       <filesize>512kb</filesize>
