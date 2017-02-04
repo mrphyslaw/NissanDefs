@@ -1,0 +1,56 @@
+<rom base="NISSAN_01">
+    <romid>
+	<xmlid>ZK01B</xmlid>
+	<hwid>ZVYXN00</hwid>
+      <internalidaddress>2401</internalidaddress>
+      <internalidstring>ZK01B</internalidstring>
+      <ecuid>ZK01B</ecuid>
+      <year>06</year>
+      <market>USDM</market>
+      <make>Nissan</make>
+      <model>Maxima</model>
+      <submodel>Base</submodel>
+      <transmission>AT</transmission>
+      <memmodel>SH7058</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>1024kb</filesize>
+    </romid>
+
+   <table name="Timing1" storageaddress="0x8Da9">
+      <table type="X Axis" storageaddress="0xB5fc" />
+      <table type="Y Axis" storageaddress="0xB60c" />
+    </table>
+    <table name="Timing Main Low Detonation" storageaddress="0x8ea9">
+      <table type="X Axis" storageaddress="0xB5fc" />
+      <table type="Y Axis" storageaddress="0xB60c" />
+    </table>
+    <table name="Timing High Detonation" storageaddress="0x8Fa9">
+      <table type="X Axis" storageaddress="0xB5fc" />
+      <table type="Y Axis" storageaddress="0xB60c" />
+    </table>
+    <table name="Fuel Compensation" storageaddress="0x9449">
+      <table type="X Axis" storageaddress="0xB4e2" />
+      <table type="Y Axis" storageaddress="0xB486" />
+    </table>
+    <table name="Fuel Target" storageaddress="0x96d9">
+      <table type="X Axis" storageaddress="0xB2b5" />
+      <table type="Y Axis" storageaddress="0xB45e" />
+    </table>
+    <table name="Intake Cam Timing (16x16)" storageaddress="0x9ae9">
+      <table type="X Axis" storageaddress="0xC2c4" />
+      <table type="Y Axis" storageaddress="0xC2e4" />
+    </table>
+<table name="MAF" storageaddress="0x0c7fa">
+</table>
+<table name="Rev Limit (Fuel Cut)" storageaddress="0x8954">
+</table>
+<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x8958">
+</table>
+<table name="Idle Target" storageaddress="0xbcbe">
+</table>
+<table name="Fuel Injection Multiplier" storageaddress="0x88c2">
+</table>
+
+<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C10" xorloc="0x8C08" />
+
+</rom>
