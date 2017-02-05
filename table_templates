@@ -301,5 +301,13 @@
    <description>Speed Limiter</description>
 </table>
 
+<table type="2D" name="Throttle Rev Limit" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+   <scaling units="Engine Speed (RPM)" expression="x*.781300" to_byte="x/.781300" format="#" fineincrement="50" coarseincrement="100" />
+   <table type="Static Y Axis" name="Rev Limit Throttle Cut" sizey="1">
+    <data>Throttle Cut</data>
+    
+   </table>
+   <description>Engine speed at which the rev limiter is engaged and disengaged, by closing the throttle. </description>
+  </table>
 
 </rom>
