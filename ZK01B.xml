@@ -50,10 +50,6 @@
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x88c2">
 </table>
-<table name="Speed Limiter" storageaddress="0x8a24" />
-
-<table name="Throttle Rev Limit" storageaddress="0x89ec">
-</table>
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C10" xorloc="0x8C08" />
 
