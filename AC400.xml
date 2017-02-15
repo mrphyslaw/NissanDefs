@@ -1,0 +1,66 @@
+<rom base="NISSAN_01">
+    <romid>
+	<xmlid>AC400</xmlid>
+	<hwid>5ZP8N00</hwid>
+      <internalidaddress>8FE6</internalidaddress>
+      <internalidstring>AC400</internalidstring>
+      <ecuid>AC400</ecuid>
+      <year>2004</year>
+      <market></market>
+      <make>Infiniti</make>
+      <model>G35</model>
+      <submodel>Base</submodel>
+      <transmission>AT</transmission>
+      <memmodel>SH7058</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>1024kb</filesize>
+    </romid>
+
+   <table name="Timing1" storageaddress="0x730D">
+      <table type="X Axis" storageaddress="0x92ee" />
+      <table type="Y Axis" storageaddress="0x92fe" />
+    </table>
+	
+    <table name="Timing Main Low Detonation" storageaddress="0x740D">
+      <table type="X Axis" storageaddress="0x92ee" />
+      <table type="Y Axis" storageaddress="0x92fe" />
+    </table>
+	
+    <table name="Timing High Detonation" storageaddress="0x750D">
+      <table type="X Axis" storageaddress="0x92ee" />
+      <table type="Y Axis" storageaddress="0x92fe" />
+    </table>
+    
+    <table name="Fuel Compensation" storageaddress="0x786D">
+      <table type="X Axis" storageaddress="0x9208" />
+      <table type="Y Axis" storageaddress="0x91ac" />
+    </table>
+	
+    <table name="Fuel Target" storageaddress="0x79FD">
+      <table type="X Axis" storageaddress="0x9037" />
+      <table type="Y Axis" storageaddress="0x91A4" />
+    </table>
+   
+    <table name="Intake Cam Timing (16x16)" storageaddress="0x7B3D">
+      <table type="X Axis" storageaddress="0x9d82" />
+      <table type="Y Axis" storageaddress="0x9d92" />
+    </table>
+   
+	<table name="MAF" storageaddress="0xA1E8">
+	</table>
+
+	<table name="Rev Limit (Fuel Cut)" storageaddress="0x6FA8">
+	</table>
+
+	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x6FAC">
+	</table>
+
+	<table name="Idle Target" storageaddress="0x988c">
+	</table>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x6f24">
+	</table>
+
+<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
+
+</rom>
