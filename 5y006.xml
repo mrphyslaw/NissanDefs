@@ -44,4 +44,6 @@
 <table name="MAF" storageaddress="0x333e">
 </table>
 
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0xe44" xorloc="0xe38" />
+
 </rom>
