@@ -67,8 +67,8 @@
 <table name="Fuel Injection Multiplier" storageaddress="0x5340">
 </table>
 <table name="Throttle Open" storageaddress="0x683c">
-      <table type="X Axis" storageaddress="0x7696" />
-      <table type="Y Axis" storageaddress="0x84ba" />
+	<table type="X Axis" storageaddress="0x84ba" />
+	<table type="Y Axis" storageaddress="0x7696" />
 </table>
 
 <table name="Throttle ? A" storageaddress="0x643c">

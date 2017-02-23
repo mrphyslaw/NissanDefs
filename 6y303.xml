@@ -64,9 +64,9 @@
 <table name="Speed Limiter (km/h)" storageaddress="0x50b2" />
 
 <table name="Throttle Open" storageaddress="0x85fc">
-      <table type="X Axis" storageaddress="0x88d0" />
-      <table type="Y Axis" storageaddress="0x8840" />
-    </table>
+	<table type="X Axis" storageaddress="0x88d0" />
+	<table type="Y Axis" storageaddress="0x8840" />
+</table>
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x51c0" xorloc="0x51b8" />
 
