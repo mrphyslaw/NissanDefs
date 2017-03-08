@@ -32,8 +32,8 @@
     </table>
     
     <table name="Fuel Compensation" storageaddress="0x6da1">
-      <table type="X Axis" storageaddress="0x84AB" />
-      <table type="Y Axis" storageaddress="0x84DF" />
+      <table type="X Axis" storageaddress="0x84df" />
+      <table type="Y Axis" storageaddress="0x84ab" />
     </table>
 
     <table name="Fuel Target" storageaddress="0x6f71">
