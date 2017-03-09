@@ -62,6 +62,6 @@
 
 
 
-<checksum type="std" start="0" end="0x7FFFF" sumloc="0x0000" xorloc="0x0000" />
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6818" xorloc="0x6810" />
 
 </rom>
