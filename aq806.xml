@@ -1,10 +1,10 @@
 <rom base="NISSAN_01">
     <romid>
-	<xmlid>1AQ806</xmlid>
+	<xmlid>AQ806</xmlid>
 	<hwid>1MATBH6D6</hwid>
-      <internalidaddress>7789</internalidaddress>
-      <internalidstring>1AQ806</internalidstring>
-      <ecuid>1AQ806</ecuid>
+      <internalidaddress>778a</internalidaddress>
+      <internalidstring>AQ806</internalidstring>
+      <ecuid>AQ806</ecuid>
       <year>02</year>
       <market>AUS</market>
       <make>Nissan</make>
