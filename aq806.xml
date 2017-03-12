@@ -31,6 +31,11 @@
       <table type="X Axis" storageaddress="0x7a68" />
       <table type="Y Axis" storageaddress="0x7a78" />
     </table>
+	
+	<table name="Fuel Compensation Cold" storageaddress="0x561d">
+      <table type="X Axis" storageaddress="0x798d" />
+      <table type="Y Axis" storageaddress="0x791d" />
+    </table>
 
     <table name="Fuel Compensation" storageaddress="0x571d">
       <table type="X Axis" storageaddress="0x798d" />
