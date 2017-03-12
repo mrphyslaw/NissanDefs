@@ -52,7 +52,7 @@
 
 	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x4a44">
 	</table>
-
+<table name="Speed Limiter (km/h)" storageaddress="0x4ac0" />
 	<table name="MAF" storageaddress="0x880e">
 	</table>
 
