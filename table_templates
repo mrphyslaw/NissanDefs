@@ -91,6 +91,17 @@
       </table>
       <description>This is an enrichment table for the ECU. Values above 100 are adding fuel, and values below 100 remove fuel.</description>
     </table>
+	
+	<table type="3D" name="Fuel Compensation Cold" category="Fuel" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+      <scaling units="NA" expression="(x/128)*100" to_byte="(x/100)*128" format="0.00" fineincrement=".2" coarseincrement="1" />
+      <table type="X Axis" name="Load" storagetype="uint8" endian="big" logparam="?">
+        <scaling units="Load" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
+      </table>
+      <table type="Y Axis" name="RPM" storagetype="uint8" endian="big" logparam="?">
+        <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
+      </table>
+      <description>This is an enrichment table for the ECU. Values above 100 are adding fuel, and values below 100 remove fuel.</description>
+    </table>
 
 <table type="3D" name="Fuel Target" category="Fuel" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="?">
       <scaling units="AFR(Gasoline Scale)" expression="14.7/(x*.0078125)" to_byte="(14.7/x)/.0078125" format="0.00" fineincrement=".2" coarseincrement="1" />
