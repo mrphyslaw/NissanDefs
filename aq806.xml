@@ -57,11 +57,31 @@
 
 	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x4a44">
 	</table>
-<table name="Speed Limiter (km/h)" storageaddress="0x4ac0" />
+	
+	<table name="Speed Limiter (km/h)" storageaddress="0x4ac0" />
+	
+	<table name="Torque Management" storageaddress="0x71f8">
+	<table type="X Axis" storageaddress="0x7816" />
+      <table type="Y Axis" storageaddress="0x78fd" />
+    </table>
+	
+	<table name="Throttle Open" storageaddress="0x6978">
+	<table type="X Axis" storageaddress="0x87ee" />
+	<table type="Y Axis" storageaddress="0x793d" />
+</table>
+
+<table name="Throttle Open 2" storageaddress="0x9840">
+	<table type="Y Axis" storageaddress="0x9afe" />
+	<table type="X Axis" storageaddress="0x9b8e" />
+</table>
+	
+	
+	
 	<table name="MAF" storageaddress="0x880e">
 	</table>
 
-
+<table name="Load Base Fuel Schedule" storageaddress="0x8a9e">
+	</table>
 
 
 
