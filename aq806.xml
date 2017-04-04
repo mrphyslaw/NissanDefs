@@ -83,7 +83,36 @@
 <table name="Load Base Fuel Schedule" storageaddress="0x8a9e">
 	</table>
 
+<!-- The following section is some very experimental, *tentative definitions* for parameters of unknown use. Scaling, naming, units and output type need to be verified -->
+<!-- fenugrec 2017 -->
 
+<table type="2D" name="Unknown thresholds 1" category="Misc" storagetype="uint8" endian="big" sizey="2" userlevel="4" storageaddress="0x438e">
+	<scaling units="" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	<table type="Static Y Axis" name="unknown_8bit" sizey="2">
+		<data>Lower</data>
+		<data>Upper</data>
+	</table>
+	<description>Unknown threshold values</description>
+</table>
+
+<table type="2D" name="Unknown thresholds 1b" category="Misc" storagetype="uint8" endian="big" sizey="1" userlevel="4" storageaddress="0x46d8">
+	<scaling units="" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	<table type="Static Y Axis" name="unknown_8bit" sizey="2">
+		<data>Thresh</data>
+	</table>
+	<description>Unknown threshold value, related to "Unknown thresholds 1"</description>
+</table>
+
+<table type="2D" name="Unknown thresholds 1c" category="Misc" storagetype="uint8" endian="big" sizey="1" userlevel="4" storageaddress="0x46e6">
+	<scaling units="" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	<table type="Static Y Axis" name="unknown_8bit" sizey="2">
+		<data>Thresh</data>
+	</table>
+	<description>Unknown threshold value, related to "Unknown thresholds 1"</description>
+</table>
+
+
+<!-- End of very-experimental defs -->
 
 <checksum type="std" start="0" end="0x7FFFF" sumloc="0x4ccc" xorloc="0x4cb8" />
 
