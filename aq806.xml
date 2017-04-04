@@ -112,6 +112,24 @@
 </table>
 
 
+<table type="3D" name="Unknown 16x16 1" category="Misc" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="4" logparam="?">
+	<!-- the +/- 32768 offset here is just to nicen the display -->
+	<scaling units="Unknown" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" />
+	<table type="X Axis" name="Unknown u16" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="??" expression="x/655.35" to_byte="x*655.35" format="0.00" fineincrement="10" coarseincrement="100" />
+	</table>
+	<table type="Y Axis" name="?" storagetype="uint8" endian="big" logparam="?">
+		<!-- ECU actually scales *16 internally for calculations, so the */ 50 here is most likely inappropriate -->
+		<scaling units="??" expression="x*50" to_byte="x/50" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<description>X axis headers go from 0 to 0xFFFF. Y from 0 to 0x78, but is scaled *16 in the code, so the similarity to RPM is not solid. This does however remind of the "throttle open" table on other ROMs</description>
+</table>
+
+<table name="Unknown 16x16 1" storageaddress="0x6978">
+	<table type="X Axis" storageaddress="0x87ee" />
+	<table type="Y Axis" storageaddress="0x793d" />
+</table>
+
 <!-- End of very-experimental defs -->
 
 <checksum type="std" start="0" end="0x7FFFF" sumloc="0x4ccc" xorloc="0x4cb8" />
