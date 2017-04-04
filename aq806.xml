@@ -130,6 +130,9 @@
 	<table type="Y Axis" storageaddress="0x793d" />
 </table>
 
+
+<table name="Fuel Injection Multiplier" storageaddress="0x49de" />
+
 <!-- End of very-experimental defs -->
 
 <checksum type="std" start="0" end="0x7FFFF" sumloc="0x4ccc" xorloc="0x4cb8" />
