@@ -1,0 +1,67 @@
+<rom base="NISSAN_01">
+<!-- some similarity with CM31C in code patterns -->
+
+	<romid>
+		<xmlid>ZH99A</xmlid>
+		<hwid>6ZVYXN00</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZH99A</internalidstring>
+		<ecuid>ZH99A</ecuid>
+		<year>??</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Altima</model>
+		<submodel>Base</submodel>
+		<transmission>??</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+	<table name="Timing1" storageaddress="0x8da9">
+		<table type="X Axis" storageaddress="0xB60C" />
+		<table type="Y Axis" storageaddress="0xB5FC" />
+	</table>
+	<table name="Timing Main Low Detonation" storageaddress="0x8ea9">
+		<table type="X Axis" storageaddress="0xB60C" />
+		<table type="Y Axis" storageaddress="0xB5FC" />
+	</table>
+	<table name="Timing High Detonation" storageaddress="0x8fa9">
+		<table type="X Axis" storageaddress="0xB60C" />
+		<table type="Y Axis" storageaddress="0xB5FC" />
+	</table>
+
+<!-- intake cam: seems to match code pattern in CM31C and general aspect. Not 100% sure -->
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x9ae9">
+		<table type="X Axis" storageaddress="0xC2E4" />
+		<table type="Y Axis" storageaddress="0xC2C4" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x9449">
+		<table type="X Axis" storageaddress="0xb486" />
+		<table type="Y Axis" storageaddress="0xb4e2" />
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x96d9">
+		<table type="X Axis" storageaddress="0xB45E" />
+		<table type="Y Axis" storageaddress="0xB2B5" />
+	</table>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x88C2" />
+
+	<table name="MAF" storageaddress="0xC7FA" />
+
+	<table name="Rev Limit (Fuel Cut)" storageaddress="0x8954" />
+
+	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x8958" />
+
+	<table name="Throttle Rev Limit" storageaddress="0x89EC" />
+
+	<table name="Idle Target" storageaddress="0xBCAE" />
+
+<!-- speed limit possibly at 8B1A -->
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x8C10" xorloc="0x8C08" />
+
+</rom>
