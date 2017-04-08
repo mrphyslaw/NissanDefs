@@ -1,0 +1,88 @@
+<rom base="NISSAN_01">
+	<romid>
+		<xmlid>8U51B</xmlid>
+		<hwid>3TREE21N19</hwid>
+		<internalidaddress>747c</internalidaddress>
+		<internalidstring>8U51B</internalidstring>
+		<ecuid>8U51B</ecuid>
+		<year>02</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>Spec-V</submodel>
+		<transmission>5MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+<!-- added fenugrec 04/2017. Very very similar to 8U07A, about 0x30 offset between most elements.
+ Code patterns practically identical -->
+<!-- note, MAF scaling not confirmed. -->
+
+	<table name="Timing1" storageaddress="0x5721">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="Timing Main Low Detonation" storageaddress="0x5821">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="Timing High Detonation" storageaddress="0x5921">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+
+	<table name="Fuel Compensation" storageaddress="0x5c21">
+		<table type="X Axis" storageaddress="0x76f2" />
+		<table type="Y Axis" storageaddress="0x76ae" />
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x5df1">
+		<table type="X Axis" storageaddress="0x7561" />
+		<table type="Y Axis" storageaddress="0x7696" />
+	</table>
+
+	<table name="Intake Cam Timing (8x8)" storageaddress="0x5fe1">
+		<table type="X Axis" storageaddress="0x81df" />
+		<table type="Y Axis" storageaddress="0x81b3" />
+	</table>
+
+	<table name="Intake Cam Timing Cold (8x8)" storageaddress="0x5fa1">
+		<table type="X Axis" storageaddress="0x81cf" />
+		<table type="Y Axis" storageaddress="0x81bb" />
+	</table>	
+
+	<table name="Rev Limit (Fuel Cut)" storageaddress="0x53d4" />
+
+	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x53d8" />
+
+	<table name="MAF" storageaddress="0x850a">
+	<!-- NOTE !!!! scaling copied from 8U07A, **not verified** !!! -->
+		<scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100" />
+	</table>
+
+	<table name="Idle Target" storageaddress="0x7d77" />
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5614" xorloc="0x560C" />
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x5366" />
+
+	<table name="Throttle Open" storageaddress="0x686c">
+		<table type="X Axis" storageaddress="0x84ea" />
+		<table type="Y Axis" storageaddress="0x76c6" />
+	</table>
+
+	<table name="Throttle ? A" storageaddress="0x646c">
+		<table type="X Axis" storageaddress="0x8446" />
+		<table type="Y Axis" storageaddress="0x8466" />
+	</table>
+
+	<table name="Throttle ? B" storageaddress="0x666c">
+		<table type="X Axis" storageaddress="0x8446" />
+		<table type="Y Axis" storageaddress="0x8466" />
+	</table>
+
+</rom>
