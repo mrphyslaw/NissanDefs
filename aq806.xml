@@ -114,6 +114,131 @@
 
 <table name="Fuel Injection Multiplier" storageaddress="0x49de" />
 
+
+<table type="3D" name="Unknown u8 16x16 1" category="Misc" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="4" logparam="?">
+	<scaling units="Unknown" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	<table type="X Axis" name="?" storagetype="uint8" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<table type="Y Axis" name="RPM ?" storagetype="uint8" endian="big" logparam="?">
+		<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
+	</table>
+	<description>Accessed near the "fuel tgt" access code; both share the same Y axis so they are probably related.</description>
+</table>
+
+<table name="Unknown u8 16x16 1" storageaddress="0x551d">
+	<table type="X Axis" storageaddress="0x7826" />
+	<table type="Y Axis" storageaddress="0x78fd" />
+</table>
+
+
+<table type="3D" name="Unknown u16 16x16 1" category="Misc" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="4" logparam="?">
+	<scaling units="Unknown" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100" />
+	<table type="X Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100" />
+	</table>
+	<table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<description>No idea what this is. Note, the X/Y axis may be swapped !!! (unverified)!</description>
+</table>
+
+<table name="Unknown u16 16x16 1" storageaddress="0x6578">
+	<table type="X Axis" storageaddress="0x875e" />
+	<table type="Y Axis" storageaddress="0x877e" />
+</table>
+
+<table type="3D" name="Unknown u16 16x16 2" category="Misc" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="4" logparam="?">
+	<scaling units="Unknown" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100" />
+	<table type="X Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100" />
+	</table>
+	<table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<description>No idea what this is. Note, the X/Y axis may be swapped !!! (unverified)!</description>
+</table>
+
+<table name="Unknown u16 16x16 2" storageaddress="0x6778">
+	<table type="X Axis" storageaddress="0x875e" />
+	<table type="Y Axis" storageaddress="0x877e" />
+</table>
+
+
+<table type="3D" name="Unknown u16 8x8 1A" category="Misc" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="4" logparam="?">
+	<!-- arbitrary +/- 32768 scaling purely to nicen the display. No idea what the real scaling should be -->
+	<scaling units="Unknown" expression="x-32768" to_byte="x+32768" format="0" fineincrement="10" coarseincrement="100" />
+	<table type="X Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<description>No idea what this is. Note, the X/Y axis may be swapped !!! (unverified)!</description>
+</table>
+
+<table name="Unknown u16 8x8 1A" storageaddress="0x6E78">
+	<table type="X Axis" storageaddress="0x8b0e" />
+	<table type="Y Axis" storageaddress="0x8b2e" />
+</table>
+
+
+<table type="3D" name="Unknown u16 8x8 1B" category="Misc" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="4" logparam="?">
+	<!-- arbitrary +/- 32768 scaling purely to nicen the display. No idea what the real scaling should be -->
+	<scaling units="Unknown" expression="x-32768" to_byte="x+32768" format="0" fineincrement="10" coarseincrement="100" />
+	<table type="X Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<description>No idea what this is. Note, the X/Y axis may be swapped !!! (unverified)!</description>
+</table>
+
+<table name="Unknown u16 8x8 1B" storageaddress="0x6Ef8">
+	<table type="X Axis" storageaddress="0x8b0e" />
+	<table type="Y Axis" storageaddress="0x8b2e" />
+</table>
+
+
+<table type="3D" name="Unknown u16 8x8 2A" category="Misc" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="4" logparam="?">
+	<!-- arbitrary +/- 32768 scaling purely to nicen the display. No idea what the real scaling should be -->
+	<scaling units="Unknown" expression="x-32768" to_byte="x+32768" format="0" fineincrement="10" coarseincrement="100" />
+	<table type="X Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<description>Probably unused ! (dead code). No idea what this is. Note, the X/Y axis may be swapped !!! (unverified)!</description>
+</table>
+
+<table name="Unknown u16 8x8 2A" storageaddress="0x6d78">
+	<table type="X Axis" storageaddress="0x8afe" />
+	<table type="Y Axis" storageaddress="0x8b1e" />
+</table>
+
+
+<table type="3D" name="Unknown u16 8x8 2B" category="Misc" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="4" logparam="?">
+	<!-- arbitrary +/- 32768 scaling purely to nicen the display. No idea what the real scaling should be -->
+	<scaling units="Unknown" expression="x-32768" to_byte="x+32768" format="0" fineincrement="10" coarseincrement="100" />
+	<table type="X Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
+		<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+	</table>
+	<description>Probably unused ! (dead code). No idea what this is. Note, the X/Y axis may be swapped !!! (unverified)!</description>
+</table>
+
+<table name="Unknown u16 8x8 2B" storageaddress="0x6df8">
+	<table type="X Axis" storageaddress="0x8afe" />
+	<table type="Y Axis" storageaddress="0x8b1e" />
+</table>
+
+
+<!-- 16x1 u8  at 0x82b2, maybe interesting? -->
+
 <!-- End of very-experimental defs -->
 
 <checksum type="std" start="0" end="0x7FFFF" sumloc="0x4ccc" xorloc="0x4cb8" />
