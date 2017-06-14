@@ -1,0 +1,72 @@
+<rom base="NISSAN_01">
+    <romid>
+	<xmlid>CD700</xmlid>
+	<hwid>1TKE8Z5N56</hwid>
+      <internalidaddress>7dfa</internalidaddress>
+      <internalidstring>cd700</internalidstring>
+      <ecuid>cd700</ecuid>
+      <year>03</year>
+      <market>EU</market>
+      <make>Nissan</make>
+      <model>350Z</model>
+      <submodel>Track</submodel>
+      <transmission>MT</transmission>
+      <memmodel>SH7055</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>512kb</filesize>
+    </romid>
+
+
+   
+   <table name="Timing1" storageaddress="0x64d1">
+      <table type="X Axis" storageaddress="0x7fdd" />
+      <table type="Y Axis" storageaddress="0x7fed" />
+    </table>
+
+    <table name="Timing Main Low Detonation" storageaddress="0x65d1">
+      <table type="X Axis" storageaddress="0x7fdd" />
+      <table type="Y Axis" storageaddress="0x7fed" />
+    </table>
+
+    <table name="Timing High Detonation" storageaddress="0x66d1">
+      <table type="X Axis" storageaddress="0x7fdd" />
+      <table type="Y Axis" storageaddress="0x7fed" />
+    </table>
+
+    <table name="Fuel Compensation" storageaddress="0x6941">
+      <table type="X Axis" storageaddress="0x7f5c" />
+      <table type="Y Axis" storageaddress="0x7f10" />
+    </table>
+
+    <table name="Fuel Target" storageaddress="0x6b11">
+      <table type="X Axis" storageaddress="0x7e4b" />
+      <table type="Y Axis" storageaddress="0x7f08" />
+    </table>
+
+<table name="Intake Cam Timing (16x16)" storageaddress="0x6c11">
+      <table type="X Axis" storageaddress="0x87f1" />
+      <table type="Y Axis" storageaddress="0x8801" />
+    </table>
+    
+<table name="Rev Limit (Fuel Cut)" storageaddress="0x61dc">
+</table>
+
+<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x61e0">
+</table>
+
+<table name="MAF" storageaddress="0x8b1e">
+</table>
+
+<table name="Fuel Injection Multiplier" storageaddress="0x616e">
+</table>
+
+<table storageaddress="0x843b" name="Idle Target"> 
+</table>
+
+<table storageaddress="0x844f" name="Idle Target 2"> 
+</table>
+
+
+<checksum type="std" start="0" end="0xFFFFF" sumloc="0x63b8" xorloc="0x63b0" />
+
+</rom>
