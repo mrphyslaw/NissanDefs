@@ -38,7 +38,7 @@
       <table type="Y Axis" storageaddress="0x6C09" />
     </table>
    
-    <table name="Intake Cam Timing" storageaddress="0x59f5">
+    <table name="Intake Cam Timing (16x16)" storageaddress="0x59f5">
       <table type="X Axis" storageaddress="0x76a0" />
       <table type="Y Axis" storageaddress="0x7690" />
     </table>
@@ -47,7 +47,7 @@
 </table>
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x4F70">
 </table>
-<table name="Maf" storageaddress="0x789c">
+<table name="MAF" storageaddress="0x789c">
 </table>
 <table name="Speed Limiter" storageaddress="0x4fba">
 </table>
