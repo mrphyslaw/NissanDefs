@@ -80,11 +80,10 @@
       <table type="Y Axis" storageaddress="0x7fed" />
     </table>
 	
-<table storageaddress="0x843b" name="Idle Target"> 
+<table storageaddress="0x845f" name="Idle Target"> 
 </table>
 
-<table storageaddress="0x844f" name="Idle Target 2"> 
-</table>
+
 
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x63b8" xorloc="0x63b0" />
