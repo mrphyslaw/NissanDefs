@@ -61,17 +61,17 @@
 </table>
 
 <table name="Throttle Open" storageaddress="0x761c">
-	<table type="X Axis" storageaddress="0x87ee" />
-	<table type="Y Axis" storageaddress="0x793d" />
+	<table type="Y Axis" storageaddress="0x9c6c" />
+	<table type="X Axis" storageaddress="0x9cfc" />
 </table>
 
 <table name="Throttle Open 2" storageaddress="0x9a28">
-	<table type="Y Axis" storageaddress="0x9afe" />
-	<table type="X Axis" storageaddress="0x9b8e" />
+	<table type="Y Axis" storageaddress="0x9c6c" />
+	<table type="X Axis" storageaddress="0x9cfc" />
 </table>
 
 <table name="Torque Management" storageaddress="0x7a9c">
-	<table type="X Axis" storageaddress="0x7816" />
+	<table type="X Axis" storageaddress="0x4c28" />
       <table type="Y Axis" storageaddress="0x78fd" />
     </table>
 	
