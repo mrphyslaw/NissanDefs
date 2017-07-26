@@ -1,7 +1,7 @@
 <rom base="NISSAN_01">
     <romid>
 	<xmlid>CD700</xmlid>
-	<hwid>4TTZVEM41N1</hwid>
+	<hwid>1TKE8Z5N56</hwid>
       <internalidaddress>7dfa</internalidaddress>
       <internalidstring>cd700</internalidstring>
       <ecuid>cd700</ecuid>
@@ -60,6 +60,26 @@
 <table name="Fuel Injection Multiplier" storageaddress="0x616e">
 </table>
 
+<table name="Throttle Open" storageaddress="0x761c">
+	<table type="X Axis" storageaddress="0x87ee" />
+	<table type="Y Axis" storageaddress="0x793d" />
+</table>
+
+<table name="Throttle Open 2" storageaddress="0x9a28">
+	<table type="Y Axis" storageaddress="0x9afe" />
+	<table type="X Axis" storageaddress="0x9b8e" />
+</table>
+
+<table name="Torque Management" storageaddress="0x7a9c">
+	<table type="X Axis" storageaddress="0x7816" />
+      <table type="Y Axis" storageaddress="0x78fd" />
+    </table>
+	
+	<table name="Torque Request" storageaddress="0x6d81">
+      <table type="X Axis" storageaddress="0x7fdd" />
+      <table type="Y Axis" storageaddress="0x7fed" />
+    </table>
+	
 <table storageaddress="0x843b" name="Idle Target"> 
 </table>
 
