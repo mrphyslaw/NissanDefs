@@ -50,6 +50,11 @@
       <table type="X Axis" storageaddress="0xC308" />
       <table type="Y Axis" storageaddress="0xC328" />
     </table>
+	
+	<table name="Torque Request" storageaddress="0x9d0d">
+      <table type="X Axis" storageaddress="0x7fdd" />
+      <table type="Y Axis" storageaddress="0x7fed" />
+    </table>
     
 <table name="MAF" storageaddress="0x0c83e">
 </table>
@@ -63,7 +68,17 @@
 <table name="Throttle Rev Limit" storageaddress="0x8a30">
 </table>
 
-<table name="Idle Target" storageaddress="0xbcf2">
+<table name="Throttle Open" storageaddress="0xA7A8">
+	<table type="X Axis" storageaddress="0xC81E" />
+	<table type="Y Axis" storageaddress="0xb4e6" />
+</table>
+
+<table name="Throttle Open 2" storageaddress="0xDB62">
+	<table type="X Axis" storageaddress="0xde38" />
+	<table type="Y Axis" storageaddress="0xdda8" />
+</table>
+
+<table name="Idle Target" storageaddress="0xbd02">
 </table>
 
 <table name="Fuel Injection Multiplier" storageaddress="0x8904">
