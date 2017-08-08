@@ -71,6 +71,11 @@
 	<table type="Y Axis" storageaddress="0x7672" />
 </table>
 
+<table name="Throttle Open 2" storageaddress="0x9540">
+	<table type="X Axis" storageaddress="0x9894" />
+	<table type="Y Axis" storageaddress="0x9804" />
+</table>
+
 <table name="Throttle ? A" storageaddress="0x6428">
 	<table type="X Axis" storageaddress="0x83e2" />
 	<table type="Y Axis" storageaddress="0x8402" />
