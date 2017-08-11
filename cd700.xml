@@ -75,7 +75,17 @@
       <table type="Y Axis" storageaddress="0x78fd" />
     </table>
 	
-	<table name="Torque Request" storageaddress="0x6d81">
+	<table name="Torque Request 1" storageaddress="0x6d81">
+      <table type="X Axis" storageaddress="0x7fdd" />
+      <table type="Y Axis" storageaddress="0x7fed" />
+    </table>
+	
+	<table name="Torque Request 2" storageaddress="0x6e81">
+      <table type="X Axis" storageaddress="0x7fdd" />
+      <table type="Y Axis" storageaddress="0x7fed" />
+    </table>
+	
+	<table name="Torque Request 3" storageaddress="0x6f81">
       <table type="X Axis" storageaddress="0x7fdd" />
       <table type="Y Axis" storageaddress="0x7fed" />
     </table>
