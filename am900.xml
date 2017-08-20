@@ -73,6 +73,6 @@
 
 <table name="Speed Limiter (km/h)" storageaddress="0x64ea" />
 
-<checksum type="std" start="0" end="0xFFFFF" sumloc="0x6640" xorloc="0x6638" />
+<checksum type="std" start="0" end="0xFFFF" sumloc="0x6640" xorloc="0x6638" />
 
 </rom>
