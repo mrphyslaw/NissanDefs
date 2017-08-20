@@ -96,6 +96,6 @@
 
 
 
-<checksum type="std" start="0" end="0xFFFFF" sumloc="0x63b8" xorloc="0x63b0" />
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0x63b8" xorloc="0x63b0" />
 
 </rom>
