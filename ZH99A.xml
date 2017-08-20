@@ -62,6 +62,6 @@
 
 <!-- speed limit possibly at 8B1A -->
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x8C10" xorloc="0x8C08" />
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C10" xorloc="0x8C08" />
 
 </rom>
