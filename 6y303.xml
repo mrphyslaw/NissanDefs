@@ -68,6 +68,6 @@
 	<table type="Y Axis" storageaddress="0x8840" />
 </table>
 
-<checksum type="std" start="0" end="0xFFFFF" sumloc="0x51c0" xorloc="0x51b8" />
+<checksum type="std" start="0" end="0xFFFF" sumloc="0x51c0" xorloc="0x51b8" />
 
 </rom>
