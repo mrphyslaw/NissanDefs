@@ -57,8 +57,6 @@
 	<table name="Rev Limit (Fuel Cut)" storageaddress="0x8776">
 	</table>
 
-	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x?">
-	</table>
 
 	<table name="Idle Target" storageaddress="0xb56c">
 	</table>
@@ -69,8 +67,9 @@
 	<table name="Fuel Injection Multiplier" storageaddress="0x86f6">
 	</table>
 	
-	<table name="Throttle Rev Limit" storageaddress="0x8806"></table>
+	<table name="Throttle Rev Limit" storageaddress="0x8806">
+	</table>
 
-<checksum type="std" start="0" end="0xFFFFF" sumloc="0x89b8" xorloc="0x89b0" />
+<checksum type="std" start="0" end="0xFFFFF" sumloc="0x89b8" xorloc="0x89b0"/>
 
 </rom>
