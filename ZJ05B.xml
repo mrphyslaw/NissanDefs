@@ -66,6 +66,9 @@
 
 	<table name="Fuel Injection Multiplier" storageaddress="0x86f6">
 	</table>
+
+	<table name="Open loop fuel target delay" storageaddress="0x7c89">
+	</table>
 	
 	<table name="Throttle Rev Limit" storageaddress="0x8806">
 	</table>
