@@ -49,10 +49,10 @@
 	<table name="MAF" storageaddress="0xC0E4">
 	</table>
 
-	<table name="Rev Limit (Fuel Cut)" storageaddress="0x0">
+	<table name="Rev Limit (Fuel Cut)" storageaddress="0x8776">
 	</table>
 
-	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x0">
+	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x?">
 	</table>
 
 	<table name="Idle Target" storageaddress="0xb56c">
@@ -61,7 +61,7 @@
 	<table name="Idle Target 2" storageaddress="0xb590">
 	</table>
 
-	<table name="Fuel Injection Multiplier" storageaddress="0x0">
+	<table name="Fuel Injection Multiplier" storageaddress="0x?">
 	</table>
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x89b8" xorloc="0x89b0" />
