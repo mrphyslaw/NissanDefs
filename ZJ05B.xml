@@ -73,8 +73,6 @@
 	<table name="Throttle Rev Limit" storageaddress="0x8806">
 	</table>
 
-	<table name="Radiator Fan Switch Point" storageaddress="0x81a3">
-	</table>
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x89b8" xorloc="0x89b0"/>
 
