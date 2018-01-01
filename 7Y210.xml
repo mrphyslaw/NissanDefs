@@ -38,10 +38,9 @@
       <table type="Y Axis" storageaddress="0xa1a3" />
     </table>
     
-<!-- axis undetermined-->
 	<table name="Intake Cam Timing (16x16)" storageaddress="0x89f1">
-      <table type="X Axis" storageaddress="0xffff" />
-      <table type="Y Axis" storageaddress="0xffff" />
+      <table type="X Axis" storageaddress="0xb15a" />
+      <table type="Y Axis" storageaddress="0xb17a" />
     </table>
 
 	<table name="MAF" storageaddress="0xb650">
