@@ -17,18 +17,18 @@
     </romid>
 
    <table name="Timing1" storageaddress="0x0">
-      <table type="X Axis" storageaddress="0xAFA2" />
-      <table type="Y Axis" storageaddress="0xAF92" />
+      <table type="X Axis" storageaddress="0xaf92" />
+      <table type="Y Axis" storageaddress="0xAfa2" />
     </table>
 	
     <table name="Timing Main Low Detonation" storageaddress="0x8AD1">
-      <table type="X Axis" storageaddress="0xAFA2" />
-      <table type="Y Axis" storageaddress="0xAF92" />
+      <table type="X Axis" storageaddress="0xaf92" />
+      <table type="Y Axis" storageaddress="0xAfa2" />
     </table>
 	
     <table name="Timing High Detonation" storageaddress="0x8BD1">
-      <table type="X Axis" storageaddress="0xAFA2" />
-      <table type="Y Axis" storageaddress="0xAF92" />
+     <table type="X Axis" storageaddress="0xaf92" />
+      <table type="Y Axis" storageaddress="0xAfa2" />
     </table>
     
     <table name="Fuel Compensation" storageaddress="0x8f31">
@@ -37,13 +37,18 @@
     </table>
 	
     <table name="Fuel Target" storageaddress="0x91d1">
-      <table type="X Axis" storageaddress="0xae60" />
-      <table type="Y Axis" storageaddress="0xad67" />
+      <table type="X Axis" storageaddress="0xad67" />
+      <table type="Y Axis" storageaddress="0xae60" />
     </table>
    
     <table name="Intake Cam Timing (8x8)" storageaddress="0x9311">
       <table type="X Axis" storageaddress="0xbaa0" />
       <table type="Y Axis" storageaddress="0xba88" />
+    </table>
+
+<table name="Intake Cam Timing Cold (8x8)" storageaddress="0x92D1">
+      <table type="X Axis" storageaddress="0xBA98" />
+      <table type="Y Axis" storageaddress="0xBA90" />
     </table>
    
 	<table name="MAF" storageaddress="0xC0E4">
@@ -61,8 +66,10 @@
 	<table name="Idle Target 2" storageaddress="0xb590">
 	</table>
 
-	<table name="Fuel Injection Multiplier" storageaddress="0x?">
+	<table name="Fuel Injection Multiplier" storageaddress="0x86f6">
 	</table>
+	
+	<table name="Throttle Rev Limit" storageaddress="0x8806"></table>
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x89b8" xorloc="0x89b0" />
 
