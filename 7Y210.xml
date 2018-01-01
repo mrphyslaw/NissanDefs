@@ -74,8 +74,8 @@
 
 <table name="Throttle Rev Limit" storageaddress="0x7942"></table>
 
-<table name="Load base fuel schedule" storageaddress="0xb914">
-</table>
+<table name="Load Base Fuel Schedule" storageaddress="0xb914">
+	</table>
 
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x7b58" xorloc="0x7b50" />
