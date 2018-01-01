@@ -43,6 +43,16 @@
       <table type="Y Axis" storageaddress="0xb17a" />
     </table>
 
+<table name="Throttle Open" storageaddress="0x965c">
+	<table type="X Axis" storageaddress="0xB630" />
+	<table type="Y Axis" storageaddress="0xa388" />
+</table>
+
+<table name="Throttle Open 2" storageaddress="0x0c90a">
+	<table type="X Axis" storageaddress="0xcbde" />
+	<table type="Y Axis" storageaddress="0xcb4e" />
+</table>
+
 	<table name="MAF" storageaddress="0xb650">
 </table>
 
@@ -60,7 +70,13 @@
 <table name="Fuel Injection Multiplier" storageaddress="0x7818">
 </table>
 
-<table name="Speed Limiter" storageaddress="0x7974" />
+<table name="Speed Limiter" storageaddress="0x7974"></table>
+
+<table name="Throttle Rev Limit" storageaddress="0x7942"></table>
+
+<table name="Load base fuel schedule" storageaddress="0xb914">
+</table>
+
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x7b58" xorloc="0x7b50" />
 
