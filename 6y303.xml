@@ -46,13 +46,20 @@
       <table type="X Axis" storageaddress="0x7785" />
       <table type="Y Axis" storageaddress="0x7795" />
     </table>
+
+<table name="Intake Cam Timing (4x4)" storageaddress="0x59f9">
+      <table type="X Axis" storageaddress="0x77b5" />
+      <table type="Y Axis" storageaddress="0x77b9" />
+    </table>
     
 <table name="Rev Limit (Fuel Cut)" storageaddress="0x5062">
 </table>
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x5066">
 </table>
+<table name="VIAS Setpoints" storageaddress="0x4e18">
+</table>
 <table name="MAF" storageaddress="0x7992">
-   <scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100" />
+   <scaling units="Airflow g/s" expression="(x-3121)*(105/25600)" to_byte="3121+x*(25600/105)" format="0.00" fineincrement="1" coarseincrement="100" />
 </table>
 <table name="Idle Target" storageaddress="0x73df">
 </table>
@@ -67,6 +74,15 @@
 	<table type="X Axis" storageaddress="0x88d0" />
 	<table type="Y Axis" storageaddress="0x8840" />
 </table>
+<table name="Idle MAF Voltage limits (USRV)" storageaddress="0x5106" />
+<table name="Idle Air/Fuel Alpha limits, % (MALPRV)" storageaddress="0x4c96" />
+<table name="Idle BFS limits, ms (TPRV)" storageaddress="0x50dc" />
+<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0x80da" />
+<table name="Catalyst CEL Fix (P0420, P0430)" storageaddress="0x8058" />
+<table name="Catalyst DTC Max Threshold Fix (P0420, P0430)" storageaddress="0x4850" />
+<table name="Catalyst DTC Min Threshold Fix (P0420, P0430)" storageaddress="0x6FB9" />
+<table name="Secondary O2 Heaters DTC Fix (P0037, P0038, P0057, P0058)" storageaddress="0x4C74" />
+<table name="VIAS Solenoid CEL (P1800)" storageaddress="0x81d0" />
 
 <checksum type="std" start="0" end="0x7FFFF" sumloc="0x51c0" xorloc="0x51b8" />
 
