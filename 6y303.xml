@@ -61,9 +61,7 @@
 <table name="MAF" storageaddress="0x7992">
    <scaling units="Airflow g/s" expression="(x-3121)*(105/25600)" to_byte="3121+x*(25600/105)" format="0.00" fineincrement="1" coarseincrement="100" />
 </table>
-<table name="Idle Target" storageaddress="0x73df">
-</table>
-<table name="Idle Target 2" storageaddress="0x7403">
+<table name="Idle Target" storageaddress="0x7403">
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x500c">
 </table>
