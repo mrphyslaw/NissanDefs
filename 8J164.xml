@@ -4,12 +4,12 @@
       <internalidaddress>6b78</internalidaddress>
       <internalidstring>8J164</internalidstring>
       <ecuid>8J164</ecuid>
-      <year>03</year>
+      <year>02</year>
       <market>USDM</market>
       <make>Nissan</make>
       <model>Altima</model>
       <submodel>Base</submodel>
-      <transmission>5MT</transmission>
+      <transmission>4AT</transmission>
       <memmodel>SH7055</memmodel>
       <flashmethod>nisprog</flashmethod>
       <filesize>512kb</filesize>
