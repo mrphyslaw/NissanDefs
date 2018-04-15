@@ -73,7 +73,7 @@
 <table name="MAF voltage limits" storageaddress="0x4ed6" />
 <table name="MAF low voltage range_w" storageaddress="0x504c" />
 <table name="Fuel correction limits, % (MALPRV)" storageaddress="0x4c96" />
-<table name="BFS limits, ms (TPRV)" storageaddress="0x50dc" />
+<table name="Idle BFS limits, ms (TPRV)" storageaddress="0x50dc" />
 <table name="Injector Latency at 14V" storageaddress="0x4dac" />
 <table name="Fuel Injector Latency Adder" storageaddress="0x4908" />
 <table name="Load Base Fuel Schedule" storageaddress="0x7b32" />
@@ -81,7 +81,6 @@
 <table name="Catalyst CEL Fix (P0420, P0430)" storageaddress="0x8058" />
 <table name="Catalyst DTC Max Threshold Fix (P0420, P0430)" storageaddress="0x4850" />
 <table name="Catalyst DTC Min Threshold Fix (P0420, P0430)" storageaddress="0x6FB9" />
-<table name="Primary O2 Heaters DTC Fix (P0031, P0032, P0051, P0052)" storageaddress="0x4B69" />
 <table name="Secondary O2 Heaters DTC Fix (P0037, P0038, P0057, P0058)" storageaddress="0x4C74" />
 <table name="VIAS Solenoid CEL (P1800)" storageaddress="0x81d0" />
 

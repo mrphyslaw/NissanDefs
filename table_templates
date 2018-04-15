@@ -199,7 +199,7 @@
    <description>The mean value of air-fuel ratio feedback correction factor per cycle.</description>
   </table>
  
- <table type="2D" name="BFS limits, ms (TPRV)" category="Fuel" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+ <table type="2D" name="Idle BFS limits, ms (TPRV)" category="Fuel" storagetype="uint16" endian="big" sizey="2" userlevel="1">
    <scaling units="milliseconds" expression="x*0.0005" to_byte="x/0.0005" format="0.00" fineincrement=".01" coarseincrement=".10" />
    <table type="Static Y Axis" name="base fuel limits" sizey="2">
     <data>Lower</data>
@@ -624,25 +624,7 @@
    <state name="off" data=" 06 EC" />
   </table>
   
-
-  
- <table type="Switch" name="(P0139) REAR O2 SENSOR SLOW" category="Diagnostic Trouble Codes" sizey="1">
-   <description>REAR OXYGEN SENSOR CONTROL CIRCUIT (BANK 1 SENSOR 2). To disable this DTC, make sure the box above is unchecked. Off-road use only.</description>
-   <state name="on" data="03" />
-   <state name="off" data="05" />
-  </table>
-  <table type="Switch" name="(P0031) REAR O2 SENSOR LOW INPUT" category="Diagnostic Trouble Codes" sizey="1">
-   <description>REAR OXYGEN SENSOR CIRCUIT LOW (BANK 1 SENSOR 2). To disable this DTC, make sure the box above is unchecked. Off-road use only.</description>
-   <state name="on" data="04" />
-   <state name="off" data="05" />
-  </table>
-  <table type="Switch" name="(P0032) REAR O2 SENSOR HIGH INPUT" category="Diagnostic Trouble Codes" sizey="1">
-   <description>REAR OXYGEN SENSOR CIRCUIT HIGH (BANK 1 SENSOR 2). To disable this DTC, make sure the box above is unchecked. Off-road use only.</description>
-   <state name="on" data="04" />
-   <state name="off" data="05" />
-  </table>
-  
-  <table type="Switch" name="VIAS Solenoid CEL (P1800)" category="OBD-II" sizey="2">
+<table type="Switch" name="VIAS Solenoid CEL (P1800)" category="OBD-II" sizey="2">
    <description>When enabled, this enables the activation of the CEL when VIAS is unplugged. </description>
    <state name="on" data=" 00 A0" />
    <state name="off" data=" 00 20" />

@@ -127,6 +127,11 @@
 	
 	<table name="Cranking Enrichment" storageaddress="0xd1a2">
 	</table>
+	<table name="MAF idle voltage limits (USRV)" storageaddress="0x8b4a" />
+<table name="MAF voltage limits" storageaddress="0x7fff" />
+<table name="Fuel correction limits, % (MALPRV)" storageaddress="0x34d3" />
+<table name="Idle BFS limits, ms (TPRV)" storageaddress="0x8b0e" />
+<table name="Load Base Fuel Schedule" storageaddress="0xcb2c" />
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
 
