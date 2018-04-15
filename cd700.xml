@@ -93,7 +93,13 @@
 <table storageaddress="0x845f" name="Idle Target"> 
 </table>
 
-
+<table name="Injector Latency at 14V" storageaddress="0x5e92" />
+<table name="Fuel Injector Latency Adder" storageaddress="0x5a43" />
+<table name="MAF idle voltage limits (USRV)" storageaddress="0x62d2" />
+<table name="MAF low voltage range_b" storageaddress="0x5e1c" />
+<table name="MAF voltage limits" storageaddress="0x6002" />
+<table name="Fuel correction limits, % (MALPRV)" storageaddress="0x5d91" />
+<table name="BFS limits, ms (TPRV)" storageaddress="0x629e" />
 
 
 <checksum type="std" start="0" end="0x7FFFF" sumloc="0x63b8" xorloc="0x63b0" />

@@ -50,8 +50,10 @@
 </table>
 <table name="Fuel Injection Multiplier" storageaddress="0x88c2">
 </table>
-
+<table name="Injector Latency at 14V" storageaddress="0x8428" />
+<table name="Fuel Injector Latency Adder" storageaddress="0x7d5f" />
 <table name="Speed Limiter" storageaddress="0x8a24" />
+<table name="Load Base Fuel Schedule" storageaddress="0xcae8" />
 
 <table name="Throttle Rev Limit" storageaddress="0x89ec">
 </table>
