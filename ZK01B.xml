@@ -57,6 +57,7 @@
 
 <table name="Throttle Rev Limit" storageaddress="0x89ec">
 </table>
+<table name="MAF factor" storageaddress="0x81e2" />
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C10" xorloc="0x8C08" />
 

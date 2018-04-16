@@ -76,7 +76,7 @@
 
 <table name="Load Base Fuel Schedule" storageaddress="0xb914">
 	</table>
-
+<table name="MAF factor" storageaddress="0x715e" />
 
 <checksum type="std" start="0" end="0xFFFFF" sumloc="0x7b58" xorloc="0x7b50" />
 

@@ -100,7 +100,7 @@
 <table name="MAF voltage limits" storageaddress="0x6002" />
 <table name="Fuel correction limits, % (MALPRV)" storageaddress="0x5d91" />
 <table name="Idle BFS limits, ms (TPRV)" storageaddress="0x629e" />
-
+<table name="MAF factor" storageaddress="0x5d15" />
 
 <checksum type="std" start="0" end="0x7FFFF" sumloc="0x63b8" xorloc="0x63b0" />
 
