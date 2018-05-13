@@ -125,21 +125,6 @@
       <description>Air fuel ratio that is targeted by the ECU. If this value doesn't match when logging other paramaters need to be adjusted, like fuel compensation, and/or maf scaling.</description>
 </table>
 
-<table type="2D" name="CL Fuel Scalar" category="Fuel" storagetype="uint8" endian="big" sizey="8" userlevel="1" logparam="?">
-      <scaling units="Lambda" expression="x/128" to_byte="x*128" format="0.00" fineincrement=".02" coarseincrement=".1" />
-      <table type="Static Y Axis" name="RPM" sizey="8">
-		<data>0</data>
-		<data>800</data> 
-		<data>1600</data>
-		<data>2400</data> 
-		<data>3200</data>
-		<data>4000</data> 
-		<data>4800</data>
-		<data>5600</data>
-	   </table>
-      <description>The ECU multiplies CL AFR Target lookup result by this RPM related factor.</description>
-</table>
-
 <table type="3D" name="Fuel Target 16x16" category="Fuel" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
       <scaling units="AFR(Gasoline Scale)" expression="14.7/(x*.0078125)" to_byte="(14.7/x)/.0078125" format="0.00" fineincrement=".2" coarseincrement="1" />
       <table type="X Axis" name="BFS" storagetype="uint8" endian="big" logparam="?">
@@ -214,7 +199,7 @@
    <description>The mean value of air-fuel ratio feedback correction factor per cycle.</description>
   </table>
  
- <table type="2D" name="BFS limits, ms (TPRV)" category="Fuel" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+ <table type="2D" name="Idle BFS limits, ms (TPRV)" category="Fuel" storagetype="uint16" endian="big" sizey="2" userlevel="1">
    <scaling units="milliseconds" expression="x*0.0005" to_byte="x/0.0005" format="0.00" fineincrement=".01" coarseincrement=".10" />
    <table type="Static Y Axis" name="base fuel limits" sizey="2">
     <data>Lower</data>
@@ -609,13 +594,7 @@
    <description>This table is how the ecu calculates 100% load at x rpm. The values shown are 100% load calculated from the base fuel schedule milliseconds. This is important for proper automatic transmission shifting. It needs to be adjusted so that the ecu sees at or near 100% when wide open throttle to correctly shift the automatic transmission.</description>
   </table>
 
-<table type="Switch" name="NATS" category="Security" sizey="1">
-   <description>Test feature, to toggle NATS on or off. </description>
-   <state name="on" data=" 01" />
-   <state name="off" data=" 00" />
-  </table>  
-  
-  <table type="Switch" name="Knock sensor CEL (P0327, P0328)" category="OBD-II" sizey="4">
+<table type="Switch" name="Knock sensor CEL (P0327, P0328)" category="OBD-II" sizey="4">
    <description>When on, this enables the activation of the CEL when knock sensor is unplugged or shorted. </description>
    <state name="on" data=" 00 A0 00 A0" />
    <state name="off" data=" 00 20 00 20" />
@@ -645,25 +624,7 @@
    <state name="off" data=" 06 EC" />
   </table>
   
-
-  
- <table type="Switch" name="(P0139) REAR O2 SENSOR SLOW" category="Diagnostic Trouble Codes" sizey="1">
-   <description>REAR OXYGEN SENSOR CONTROL CIRCUIT (BANK 1 SENSOR 2). To disable this DTC, make sure the box above is unchecked. Off-road use only.</description>
-   <state name="on" data="03" />
-   <state name="off" data="05" />
-  </table>
-  <table type="Switch" name="(P0031) REAR O2 SENSOR LOW INPUT" category="Diagnostic Trouble Codes" sizey="1">
-   <description>REAR OXYGEN SENSOR CIRCUIT LOW (BANK 1 SENSOR 2). To disable this DTC, make sure the box above is unchecked. Off-road use only.</description>
-   <state name="on" data="04" />
-   <state name="off" data="05" />
-  </table>
-  <table type="Switch" name="(P0032) REAR O2 SENSOR HIGH INPUT" category="Diagnostic Trouble Codes" sizey="1">
-   <description>REAR OXYGEN SENSOR CIRCUIT HIGH (BANK 1 SENSOR 2). To disable this DTC, make sure the box above is unchecked. Off-road use only.</description>
-   <state name="on" data="04" />
-   <state name="off" data="05" />
-  </table>
-  
-  <table type="Switch" name="VIAS Solenoid CEL (P1800)" category="OBD-II" sizey="2">
+<table type="Switch" name="VIAS Solenoid CEL (P1800)" category="OBD-II" sizey="2">
    <description>When enabled, this enables the activation of the CEL when VIAS is unplugged. </description>
    <state name="on" data=" 00 A0" />
    <state name="off" data=" 00 20" />
@@ -677,20 +638,4 @@
    </table>
    <description>These are the engine speeds at which the vias solenoid is engaged and disengaged. When engine speed is equal to or exceeds the 'Low' value, VIAS is active, after which, if engine speed increases above the 'High' value, VIAS is deactived.</description>
   </table>
-
-  <table type="3D" name="CID1100" category="Misc" storagetype="uint16" endian="big" userlevel="1">
-   <scaling units="" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="16" />
-		<table type="Static Y Axis" name="CID" sizey="32">
-			<data>00</data>
-			<data>01</data>
-			<data>02</data>
-			<data>03</data>
-          </table>
-		<table type="Static X Axis" name="offset" sizey="4">
-			<data>00</data>
-			<data>01</data>
-		</table>
-   <description>CID RAM addresses</description>
-</table>
-  
-  </rom>
+</rom>
