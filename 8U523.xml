@@ -54,6 +54,9 @@
 <table name="Rev Limit (Fuel Cut)" storageaddress="0x539e">
 </table>
 
+<table name="Speed Limiter" storageaddress="0x5440" />
+<table name="Speed Limiter (km/h)" storageaddress="0x5440" />
+
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x53a2">
 </table>
 
