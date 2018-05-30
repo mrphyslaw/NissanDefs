@@ -1,0 +1,89 @@
+<rom base="NISSAN_01">
+<--! initial def fenugrec 2017 -->
+	<romid>
+		<xmlid>M5113</xmlid>
+		<hwid>N1MATBH5D5</hwid>
+		<internalidaddress>7772</internalidaddress>
+		<internalidstring>M5113</internalidstring>
+		<ecuid>M5113</ecuid>
+		<year>02</year>
+		<market>JP</market>
+		<make>Nissan</make>
+		<model>Stagea</model>
+		<submodel>NISMO</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH705507</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Timing1" storageaddress="0x4e01">
+		<table type="X Axis" storageaddress="0x7a50" />
+		<table type="Y Axis" storageaddress="0x7a60" />
+	</table>
+
+	<table name="Timing Main Low Detonation" storageaddress="0x4f01">
+		<table type="X Axis" storageaddress="0x7a50" />
+		<table type="Y Axis" storageaddress="0x7a60" />
+	</table>
+
+	<table name="Timing High Detonation" storageaddress="0x5081">
+		<table type="X Axis" storageaddress="0x7a50" />
+		<table type="Y Axis" storageaddress="0x7a60" />
+	</table>
+
+	<table name="Fuel Compensation Cold" storageaddress="0x5605">
+		<table type="X Axis" storageaddress="0x7975" />
+		<table type="Y Axis" storageaddress="0x7905" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x5705">
+		<table type="X Axis" storageaddress="0x7975" />
+		<table type="Y Axis" storageaddress="0x7905" />
+	</table>
+
+	<table name="Fuel Target 16x16" storageaddress="0x5ad5">
+		<table type="X Axis" storageaddress="0x77fe" />
+		<table type="Y Axis" storageaddress="0x78e5" />
+	</table>
+
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x61a5">
+		<table type="X Axis" storageaddress="0x83fa" />
+		<table type="Y Axis" storageaddress="0x841a" />
+	</table>
+
+	<table name="Rev Limit (Fuel Cut)" storageaddress="0x4a26">
+	</table>
+
+	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x4a2a">
+	</table>
+
+	<table name="Speed Limiter (km/h)" storageaddress="0x4aa6" />
+
+	<table name="Torque Management" storageaddress="0x71e0">
+		<table type="X Axis" storageaddress="0x77fe" />
+		<table type="Y Axis" storageaddress="0x78e5" />
+	</table>
+
+	<table name="Throttle Open" storageaddress="0x6960">
+		<table type="X Axis" storageaddress="0x8786" />
+		<table type="Y Axis" storageaddress="0x7925" />
+	</table>
+
+	<table name="Throttle Open 2" storageaddress="0x97d8">
+		<table type="Y Axis" storageaddress="0x9a96" />
+		<table type="X Axis" storageaddress="0x9b26" />
+	</table>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x49c4"/>
+
+	<table name="MAF" storageaddress="0x87a6">
+	</table>
+
+	<table name="Load Base Fuel Schedule" storageaddress="0x8a36">
+	</table>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x4CB4" xorloc="0x4CA0" />
+
+</rom>
+
