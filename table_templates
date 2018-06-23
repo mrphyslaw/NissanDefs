@@ -337,7 +337,7 @@
 
 <table type="2D" name="Idle Target 2" category="Misc" storagetype="uint8" endian="big" sizey="16" userlevel="1">
    <scaling units="RPM" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="100" />
-   <table type="Static Y Axis" name="Coolant Temperature(Farenheight)" format="0" sizey="16">
+   <table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
    <data>-40</data>
     <data>-22</data>
     <data>-4</data>
@@ -368,7 +368,7 @@
   </table>
   
   <table type="2D" name="Radiator Fan Switch Point" category="Misc" storagetype="uint8" endian="big" sizey="1" userlevel="1">
-   <scaling units="Degrees Farenheight" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="#" fineincrement="1" coarseincrement="10" />
+   <scaling units="Degrees Fahrenheit" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="#" fineincrement="1" coarseincrement="10" />
    <table type="Static Y Axis" name="Coolant Temp" sizey="2">
     <data>Coolant Temp</data>
    </table>
@@ -422,7 +422,7 @@
 
   <table type="2D" name="Cranking Enrichment" category="Fuel" storagetype="uint16" endian="big" sizey="8" userlevel="1">
    <scaling units="Percentage" expression="x/32768" to_byte="x*32768" format="0.00%" fineincrement=".1" coarseincrement="10" />
-   <table type="Static Y Axis" name="Degrees Farenheight" sizey="8">
+   <table type="Static Y Axis" name="Degrees Fahrenheit" sizey="8">
     	<data>     -40    </data>
     	<data>     -4     </data>
 		<data>     32     </data>
