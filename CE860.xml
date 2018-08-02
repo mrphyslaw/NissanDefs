@@ -1,0 +1,95 @@
+<rom base="NISSAN_01">
+    <romid>
+	<xmlid>CE860</xmlid>
+	<hwid>1TKE8Z5N56</hwid>
+      <internalidaddress>7d46</internalidaddress>
+      <internalidstring>ce860</internalidstring>
+      <ecuid>ce860</ecuid>
+      <year>04</year>
+      <market>EU</market>
+      <make>Nissan</make>
+      <model>350Z</model>
+      <submodel>Performance</submodel>
+      <transmission>AT</transmission>
+      <memmodel>SH705513</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>512kb</filesize>
+    </romid>
+
+	
+   <table name="Timing1" storageaddress="0x641d">
+      <table type="X Axis" storageaddress="0x7f29" />
+      <table type="Y Axis" storageaddress="0x7f39" />
+    </table>
+
+    <table name="Timing Main Low Detonation" storageaddress="0x651d">
+      <table type="X Axis" storageaddress="0x7f29" />
+      <table type="Y Axis" storageaddress="0x7f39" />
+    </table>
+
+    <table name="Timing High Detonation" storageaddress="0x661d">
+      <table type="X Axis" storageaddress="0x7f29" />
+      <table type="Y Axis" storageaddress="0x7f39" />
+    </table>
+
+    <table name="Fuel Compensation" storageaddress="0x688d">
+      <table type="X Axis" storageaddress="0x7ea8" />
+      <table type="Y Axis" storageaddress="0x7e5c" />
+    </table>
+
+    <table name="Fuel Target" storageaddress="0x6a5d">
+      <table type="X Axis" storageaddress="0x7d97" />
+      <table type="Y Axis" storageaddress="0x7e54" />
+    </table>
+	
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x6b5d">
+      <table type="X Axis" storageaddress="0x873d" />
+      <table type="Y Axis" storageaddress="0x874d" />
+    </table>
+
+<table name="Rev Limit (Fuel Cut)" storageaddress="0x6124" />
+<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x6128" />
+
+<table name="MAF" storageaddress="0x8a74" />
+
+<table name="Fuel Injection Multiplier" storageaddress="0x60b6" />
+	
+<table name="Idle Target" storageaddress="0x83ab" />
+<table name="Idle Target C" storageaddress="0x83ab" />
+	
+<table name="Speed Limiter" storageaddress="0x61b2" />
+<table name="Speed Limiter (km/h)" storageaddress="0x61b2" />
+
+<table name="Throttle Open" storageaddress="0x7568">
+	<table type="Y Axis" storageaddress="0x9bc4" />
+	<table type="X Axis" storageaddress="0x9c54" />
+</table>
+
+<table name="Throttle Open 2" storageaddress="0x9980">
+	<table type="Y Axis" storageaddress="0x9bc4" />
+	<table type="X Axis" storageaddress="0x9c54" />
+</table>
+
+<table name="Torque Management" storageaddress="0x79e8">
+	<table type="X Axis" storageaddress="0x4be0" />
+      <table type="Y Axis" storageaddress="0x7849" />
+    </table>
+	
+	<table name="Torque Request 1" storageaddress="0x6ccd">
+      <table type="X Axis" storageaddress="0x7f29" />
+      <table type="Y Axis" storageaddress="0x7f39" />
+    </table>
+	
+	<table name="Torque Request 2" storageaddress="0x6dcd">
+      <table type="X Axis" storageaddress="0x7f29" />
+      <table type="Y Axis" storageaddress="0x7f39" />
+    </table>
+	
+	<table name="Torque Request 3" storageaddress="0x6ecd">
+      <table type="X Axis" storageaddress="0x7f29" />
+      <table type="Y Axis" storageaddress="0x7f39" />
+    </table>
+
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0x62fc" xorloc="0x62f4" />
+
+</rom>

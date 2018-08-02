@@ -1,0 +1,32 @@
+<rom base="NISSAN_01">
+    <romid>
+	<xmlid>CE410</xmlid>
+	<hwid>2WLM1D13</hwid>
+      <internalidaddress>8023</internalidaddress>
+      <internalidstring>CE410</internalidstring>
+      <ecuid>CE410</ecuid>
+      <year>03</year>
+      <market>JDM</market>
+      <make>Nissan</make>
+      <model>350Z</model>
+      <submodel>??</submodel>
+      <transmission>MT</transmission>
+      <memmodel>SH7055</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>512kb</filesize>
+    </romid>
+
+<table name="Rev Limit (Fuel Cut)" storageaddress="0x6346" />
+<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x634a" />
+
+<table name="Fuel Injection Multiplier" storageaddress="0x62e6" />
+
+<table name="Idle Target" storageaddress="0x884b" />
+<table name="Idle Target C" storageaddress="0x884b" />
+
+<table name="Speed Limiter" storageaddress="0x63aa" />
+<table name="Speed Limiter (km/h)" storageaddress="0x63aa" />
+
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6500" xorloc="0x64F8" />
+
+</rom>
