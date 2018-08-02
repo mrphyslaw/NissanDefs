@@ -16,6 +16,26 @@
       <filesize>512kb</filesize>
     </romid>
 
+   <table name="Timing1" storageaddress="0x6709">
+      <table type="X Axis" storageaddress="0x82F7" />
+      <table type="Y Axis" storageaddress="0x8307" />
+    </table>
+
+    <table name="Timing Main Low Detonation" storageaddress="0x6809">
+      <table type="X Axis" storageaddress="0x82F7" />
+      <table type="Y Axis" storageaddress="0x8307" />
+    </table>
+
+    <table name="Fuel Compensation" storageaddress="0x6AC9">
+      <table type="X Axis" storageaddress="0x822D" />
+      <table type="Y Axis" storageaddress="0x82F7" />
+    </table>
+
+    <table name="Fuel Target" storageaddress="0x6CD9">
+      <table type="X Axis" storageaddress="0x8080" />
+      <table type="Y Axis" storageaddress="0x81C9" />
+    </table>
+
 <table name="Rev Limit (Fuel Cut)" storageaddress="0x6346" />
 <table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x634a" />
 
